@@ -40,7 +40,7 @@ if authentication_status == False:
     st.error("Username/password is incorrect")
     st.markdown(hide_bar, unsafe_allow_html=True)
 
-if authentication_status == None:
+if authentication_status is None:
     st.warning("Please enter your username and password")
     st.markdown(hide_bar, unsafe_allow_html=True)
 
